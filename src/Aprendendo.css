@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background: #37004d;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+form{
+    display: flex;
+    position: relative;
+    width: 600px; /*largura*/
+    height: 40px; /*altura*/
+    margin:30px auto; /*margem de 30px para cime e baixo + automatico nas laterai = centralizado*/
+    margin-bottom: 60px; /*Maregm para baixo*/
+}
+input{
+    display: flex; /*faz com que o elemento fique flexivel no layout*/
+    width: 100%;
+    height: 40px;  
+    background: #e7abff;
+    border: none;
+    padding-left: 10px; /*preenchimento interno exquerto*/
+    font-size: 15px; /*tamanho da fonte de dentro do input*/
+    border-radius: 8px; /*arredodamento da borda*/
+    color: white;
+}
+button.add{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ca4cfc; /*cor do botão*/
+    border: none;
+    color: rgb(58, 0, 63); /*cor da escrita*/
+    cursor: pointer; /*ponteiro do mouse ser aquele dedinho de clicar*/
+    padding: 10px 25px;  /*preenchimento interno dele aao redor do letreiro: baixo cima - laterais*/
+    border-top-right-radius: 8px; /*borda de cima da direita*/
+    border-bottom-right-radius: 8px; /*borda de baixo da direita*/
+    height: 42px;
+}
+button.add:hover{ /*quando o maouse estiver sobre*/
+    color: white;
+    background: #cf5bfd;
+}
+
+/*se tela for menor que 900px = o form terá 100% do do width lhe designado*/
+@media screen and (max-width: 900px) {
+    form{
+        width: 100%;
+    }
+}
+

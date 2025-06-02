@@ -1,9 +1,14 @@
 import React from 'react'
+import SportsMenu from '../components/SportsMenu';
 
 const Chaveamento = () => {
   return (
-    <div>Chaveamento</div>
-  )
+    <>
+      <div>
+        <SportsMenu />
+        </div>
+    </>
+  );
 }
 
 export default Chaveamento

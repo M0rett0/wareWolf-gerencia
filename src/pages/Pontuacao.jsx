@@ -1,9 +1,14 @@
 import React from 'react'
+import SportsMenu from '../components/SportsMenu';
 
 const Pontuacao = () => {
   return (
-    <div>Pontuacao</div>
-  )
+    <>
+      <div>
+        <SportsMenu />
+        </div>
+    </>
+  );
 }
 
 export default Pontuacao

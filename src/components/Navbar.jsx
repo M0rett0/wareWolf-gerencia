@@ -15,8 +15,8 @@ function Navbar() {
         <ul className={styles.navLinks}>
             <li><Link to="/">Início</Link></li>
             <li><Link to="/equipes">Equipes</Link></li>
-            <li><Link to="/pontuacao">Pontuação</Link></li>
             <li><Link to="/chaveamento">Chaveamentos</Link></li>
+            <li><Link to="/pontuacao">Pontuação</Link></li>
             <li>
                 <Link to="/perfil" title="Seu perfil">
                 <FaUserCircle className={styles.perfilIcone} /> 

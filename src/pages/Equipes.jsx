@@ -2,6 +2,15 @@ import SportsMenu from '../components/SportsMenu';
 import Body from '../components/Body';
 
 function Equipes(){
-    return <h1>Página inicial</h1>;
+    return (
+        <>
+            <div>
+                <SportsMenu />
+            </div>
+            <div>
+                <Body />
+            </div>
+        </>
+    );
 }
 export default Equipes;

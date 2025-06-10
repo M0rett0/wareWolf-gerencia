@@ -5,6 +5,8 @@ import { FaUserCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+    const isLoggedIn = localStorage.getItem('user');
+
     return (
         <nav className={styles.navbar}>
         <div>
@@ -17,11 +19,19 @@ function Navbar() {
             <li><Link to="/equipes">Equipes</Link></li>
             <li><Link to="/pontuacao">Pontuação</Link></li>
             <li><Link to="/chaveamento">Chaveamentos</Link></li>
-            <li>
-                <Link to="/perfil" title="Seu perfil">
-                <FaUserCircle className={styles.perfilIcone} /> 
-                </Link>
-            </li>
+
+            {isLoggedIn ? (
+                <li>
+                  <Link to="/perfil" title="Seu perfil">
+                    <FaUserCircle className={styles.perfilIcone} /> 
+                  </Link>
+                </li>
+            ) : (
+              <>
+                <li><Link to="/login">Entrar</Link></li>
+                <li><Link to="/register">Cadastrar</Link></li>
+              </>
+            )}
         </ul>
         </nav>
     );
